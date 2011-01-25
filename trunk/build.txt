@@ -1,0 +1,1 @@
+﻿This library requires ISOLanguages(.dll) library, project located at http://code.google.com/p/isiolanguages
