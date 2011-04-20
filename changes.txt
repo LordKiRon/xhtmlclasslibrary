@@ -1,1 +1,4 @@
-﻿1.0.4.0 - added to GoogleCode
+﻿1.0.5.0
+* Fixed case when text with null text data assigned
+
+1.0.4.0 - added to GoogleCode

@@ -79,7 +79,13 @@ namespace XHTMLClassLibrary.BaseElements
 
     public class SimpleEPubText : IXHTMLItem
     {
-        public string Text { get; set; }
+        private string _text;
+
+        public string Text
+        {
+            get { return _text; }
+            set { _text = value ?? string.Empty; }
+        }
 
 
         public void Load(XNode xNode)
