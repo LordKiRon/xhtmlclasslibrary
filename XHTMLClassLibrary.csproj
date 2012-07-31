@@ -56,10 +56,6 @@
     <ErrorReport>prompt</ErrorReport>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="ISOLanguages, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>ExtLibs\ISOLanguages.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
@@ -292,6 +288,12 @@
   <ItemGroup>
     <Content Include="build.txt" />
     <Content Include="changes.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\isiolanguages\ISOLanguages.csproj">
+      <Project>{58E261A5-B2EA-43F3-820D-902B5C061321}</Project>
+      <Name>ISOLanguages</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
