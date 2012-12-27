@@ -246,6 +246,7 @@
     <Compile Include="BaseElements\InlineElements\ShortQuote.cs" />
     <Compile Include="BaseElements\InlineElements\SmallText.cs" />
     <Compile Include="BaseElements\InlineElements\Span.cs" />
+    <Compile Include="BaseElements\InlineElements\Strike.cs" />
     <Compile Include="BaseElements\InlineElements\Strong.cs" />
     <Compile Include="BaseElements\InlineElements\Sub.cs" />
     <Compile Include="BaseElements\InlineElements\Sup.cs" />
