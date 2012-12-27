@@ -1,4 +1,7 @@
-﻿1.0.5.0
+﻿1.0.7.0
+* Fixed strikethroug element
+
+1.0.5.0
 * Fixed case when text with null text data assigned
 
 1.0.4.0 - added to GoogleCode
