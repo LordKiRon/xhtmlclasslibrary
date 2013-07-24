@@ -11,7 +11,7 @@ namespace XHTMLClassLibrary.BaseElements
     public enum TextStyles
     {
         Normal = 0,
-        Strong, // <strong> , depricated <b>
+        Strong, // <strong> , deprecated <b>
         Emphasis, // <em>
         Sub, // <sub>
         Sup, // <sup>
@@ -50,16 +50,16 @@ namespace XHTMLClassLibrary.BaseElements
         bool IsValid();
 
         /// <summary>
-        /// Adds subitem to the item , only if 
+        /// Adds sub item to the item , only if 
         /// allowed by the rules and element can accept content
         /// </summary>
-        /// <param name="item">subitem to add</param>
+        /// <param name="item">sub item to add</param>
         void Add(IXHTMLItem item);
 
         /// <summary>
-        /// Removes subitem 
+        /// Removes sub item 
         /// </summary>
-        /// <param name="item">subitem to remove</param>
+        /// <param name="item">sub item to remove</param>
         void Remove(IXHTMLItem item);
 
         /// <summary>
@@ -109,18 +109,18 @@ namespace XHTMLClassLibrary.BaseElements
         }
 
         /// <summary>
-        /// Adds subitem to the item , only if 
+        /// Adds sub item to the item , only if 
         /// allowed by the rules and element can accept content
         /// </summary>
-        /// <param name="item">subitem to add</param>
+        /// <param name="item">sub item to add</param>
         public void Add(IXHTMLItem item)
         {
-            throw new Exception("This element does not contain subitems");
+            throw new Exception("This element does not contain sub items");
         }
 
         public void Remove(IXHTMLItem item)
         {
-            throw new Exception("This element does not contain subitems");
+            throw new Exception("This element does not contain sub items");
         }
 
         public List<IXHTMLItem> SubElements()

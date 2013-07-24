@@ -52,9 +52,9 @@ namespace XHTMLClassLibrary.BaseElements
         }
 
         /// <summary>
-        /// Removes subitem 
+        /// Removes sub item 
         /// </summary>
-        /// <param name="item">subitem to remove</param>
+        /// <param name="item">sub item to remove</param>
         public void Remove(IXHTMLItem item)
         {
             if (content.Remove(item))
@@ -83,10 +83,10 @@ namespace XHTMLClassLibrary.BaseElements
         #endregion
 
         /// <summary>
-        /// Check if element can be subelement of this element (according to XHTML rules)
+        /// Check if element can be sub element of this element (according to XHTML rules)
         /// </summary>
         /// <param name="item">element to check</param>
-        /// <returns>true if it can be subelement, false otherwise</returns>
+        /// <returns>true if it can be sub element, false otherwise</returns>
         protected abstract bool IsValidSubType(IXHTMLItem item);
 
 
