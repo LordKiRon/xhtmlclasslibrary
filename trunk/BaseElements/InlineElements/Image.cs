@@ -14,32 +14,32 @@ namespace XHTMLClassLibrary.BaseElements.InlineElements
     /// </summary>
     public class Image : BaseInlineItem
     {
-        private readonly LanguageAttr language = new LanguageAttr();
-        private readonly DirectionAttr direction = new DirectionAttr();
+        private readonly LanguageAttr _language = new LanguageAttr();
+        private readonly DirectionAttr _direction = new DirectionAttr();
 
 
         // basic attributes
-        private readonly AltAttribute altAttribute = new AltAttribute();
-        private readonly HeightAttribute heightAttribute = new HeightAttribute();
-        private readonly WidthAttribute widthAttribute = new WidthAttribute();
-        private readonly SourceAttribute srcAttribute = new SourceAttribute();
+        private readonly AltAttribute _altAttribute = new AltAttribute();
+        private readonly HeightAttribute _heightAttribute = new HeightAttribute();
+        private readonly WidthAttribute _widthAttribute = new WidthAttribute();
+        private readonly SourceAttribute _srcAttribute = new SourceAttribute();
 
         // advanced attributes 
-        private readonly ISMapAttribute ismapAttribute = new ISMapAttribute();
-        private readonly LongDescriptionAttribute longDescAttribute = new LongDescriptionAttribute();
-        private readonly UseMapAttribute useMapAttribute = new UseMapAttribute();
+        private readonly ISMapAttribute _ismapAttribute = new ISMapAttribute();
+        private readonly LongDescriptionAttribute _longDescAttribute = new LongDescriptionAttribute();
+        private readonly UseMapAttribute _useMapAttribute = new UseMapAttribute();
 
         // Common event attributes
-        private readonly OnClickEventAttribute onClick = new OnClickEventAttribute();
-        private readonly OnDblClickEventAttribute onDblClick = new OnDblClickEventAttribute();
-        private readonly OnMouseDownEventAttribute onMouseDown = new OnMouseDownEventAttribute();
-        private readonly OnMouseUpEventAttribute onMouseUp = new OnMouseUpEventAttribute();
-        private readonly OnMouseOverEventAttribute onMouseOver = new OnMouseOverEventAttribute();
-        private readonly OnMouseMoveEventAttribute onMouseMove = new OnMouseMoveEventAttribute();
-        private readonly OnMouseOutEventAttribute onMouseOut = new OnMouseOutEventAttribute();
-        private readonly OnKeyPressEventAttribute onKeyPress = new OnKeyPressEventAttribute();
-        private readonly OnKeyDownEventAttribute onKeyDown = new OnKeyDownEventAttribute();
-        private readonly OnKeyUpEventAttribute onKeyUp = new OnKeyUpEventAttribute();
+        private readonly OnClickEventAttribute _onClick = new OnClickEventAttribute();
+        private readonly OnDblClickEventAttribute _onDblClick = new OnDblClickEventAttribute();
+        private readonly OnMouseDownEventAttribute _onMouseDown = new OnMouseDownEventAttribute();
+        private readonly OnMouseUpEventAttribute _onMouseUp = new OnMouseUpEventAttribute();
+        private readonly OnMouseOverEventAttribute _onMouseOver = new OnMouseOverEventAttribute();
+        private readonly OnMouseMoveEventAttribute _onMouseMove = new OnMouseMoveEventAttribute();
+        private readonly OnMouseOutEventAttribute _onMouseOut = new OnMouseOutEventAttribute();
+        private readonly OnKeyPressEventAttribute _onKeyPress = new OnKeyPressEventAttribute();
+        private readonly OnKeyDownEventAttribute _onKeyDown = new OnKeyDownEventAttribute();
+        private readonly OnKeyUpEventAttribute _onKeyUp = new OnKeyUpEventAttribute();
 
 
         #region public_attributes
@@ -53,7 +53,7 @@ namespace XHTMLClassLibrary.BaseElements.InlineElements
         /// </summary>
         public DirectionAttr Direction
         {
-            get { return direction; }
+            get { return _direction; }
         }
 
         /// <summary>
@@ -61,64 +61,64 @@ namespace XHTMLClassLibrary.BaseElements.InlineElements
         /// </summary>
         public OnClickEventAttribute OnClick
         {
-            get { return onClick; }
+            get { return _onClick; }
         }
 
 
         /// <summary>
         /// A client-side script event that occurs when a pointing device button is double-clicked over an element.
         /// </summary>
-        public OnDblClickEventAttribute OnDblClick { get { return onDblClick; } }
+        public OnDblClickEventAttribute OnDblClick { get { return _onDblClick; } }
 
 
         /// <summary>
         /// A client-side script event that occurs when a pointing device button is pressed down over an element.
         /// </summary>
-        public OnMouseDownEventAttribute OnMouseDown { get { return onMouseDown; } }
+        public OnMouseDownEventAttribute OnMouseDown { get { return _onMouseDown; } }
 
         /// <summary>
         /// A client-side script event that occurs when a pointing device button is released over an element.
         /// </summary>
-        public OnMouseUpEventAttribute OnMouseUp { get { return onMouseUp; } }
+        public OnMouseUpEventAttribute OnMouseUp { get { return _onMouseUp; } }
 
 
         /// <summary>
         /// A client-side script event that occurs when a pointing device is moved onto an element.
         /// </summary>
-        public OnMouseOverEventAttribute OnMouseOver { get { return onMouseOver; } }
+        public OnMouseOverEventAttribute OnMouseOver { get { return _onMouseOver; } }
 
         /// <summary>
         /// A client-side script event that occurs when a pointing device is moved within an element.
         /// </summary>
-        public OnMouseMoveEventAttribute OnMouseMove { get { return onMouseMove; } }
+        public OnMouseMoveEventAttribute OnMouseMove { get { return _onMouseMove; } }
 
 
         /// <summary>
         /// A client-side script event that occurs when a pointing device is moved away from an element.
         /// </summary>
-        public OnMouseOutEventAttribute OnMouseOut { get { return onMouseOut; } }
+        public OnMouseOutEventAttribute OnMouseOut { get { return _onMouseOut; } }
 
         /// <summary>
         /// A client-side script event that occurs when a key is pressed down over an element then released.
         /// </summary>
-        public OnKeyPressEventAttribute OnKeyPress { get { return onKeyPress; } }
+        public OnKeyPressEventAttribute OnKeyPress { get { return _onKeyPress; } }
 
         /// <summary>
         /// A client-side script event that occurs when a key is pressed down over an element.
         /// </summary>
-        public OnKeyDownEventAttribute OnKeyDown { get { return onKeyDown; } }
+        public OnKeyDownEventAttribute OnKeyDown { get { return _onKeyDown; } }
 
         /// <summary>
         /// A client-side script event that occurs when a key is released over an element.
         /// </summary>
-        public OnKeyUpEventAttribute OnKeyUp { get { return onKeyUp; } }
+        public OnKeyUpEventAttribute OnKeyUp { get { return _onKeyUp; } }
 
         /// <summary>
         /// This attribute specifies the base language of an element's attribute values and text content.
         /// </summary>
         public LanguageAttr Language
         {
-            get { return language; }
+            get { return _language; }
         }
 
         /// <summary>
@@ -129,7 +129,7 @@ namespace XHTMLClassLibrary.BaseElements.InlineElements
         {
             get
             {
-                return altAttribute;
+                return _altAttribute;
             }
         }
 
@@ -138,7 +138,7 @@ namespace XHTMLClassLibrary.BaseElements.InlineElements
         /// </summary>
         public HeightAttribute Height
         {
-            get { return heightAttribute; }
+            get { return _heightAttribute; }
         }
 
         /// <summary>
@@ -146,7 +146,7 @@ namespace XHTMLClassLibrary.BaseElements.InlineElements
         /// </summary>
         public  WidthAttribute Width
         {
-            get { return widthAttribute; }
+            get { return _widthAttribute; }
         }
 
         /// <summary>
@@ -154,7 +154,7 @@ namespace XHTMLClassLibrary.BaseElements.InlineElements
         /// </summary>
         public  SourceAttribute Source
         {
-            get { return srcAttribute; }
+            get { return _srcAttribute; }
         }
 
         /// <summary>
@@ -163,7 +163,7 @@ namespace XHTMLClassLibrary.BaseElements.InlineElements
         /// </summary>
         public ISMapAttribute ISMap
         {
-            get { return ismapAttribute; }
+            get { return _ismapAttribute; }
         }
 
         /// <summary>
@@ -172,7 +172,7 @@ namespace XHTMLClassLibrary.BaseElements.InlineElements
         /// </summary>
         public LongDescriptionAttribute LongDescription
         {
-            get { return longDescAttribute; }
+            get { return _longDescAttribute; }
         }
 
         /// <summary>
@@ -181,7 +181,7 @@ namespace XHTMLClassLibrary.BaseElements.InlineElements
         /// </summary>
         public UseMapAttribute UseMap
         {
-            get { return useMapAttribute; }
+            get { return _useMapAttribute; }
         }
 
         #endregion
@@ -210,28 +210,28 @@ namespace XHTMLClassLibrary.BaseElements.InlineElements
 
             ReadAttributes(xElement);
 
-            altAttribute.ReadAttribute(xElement);
-            heightAttribute.ReadAttribute(xElement);
-            widthAttribute.ReadAttribute(xElement);
-            srcAttribute.ReadAttribute(xElement);
+            _altAttribute.ReadAttribute(xElement);
+            _heightAttribute.ReadAttribute(xElement);
+            _widthAttribute.ReadAttribute(xElement);
+            _srcAttribute.ReadAttribute(xElement);
 
-            ismapAttribute.ReadAttribute(xElement);
-            longDescAttribute.ReadAttribute(xElement);
-            useMapAttribute.ReadAttribute(xElement);
+            _ismapAttribute.ReadAttribute(xElement);
+            _longDescAttribute.ReadAttribute(xElement);
+            _useMapAttribute.ReadAttribute(xElement);
 
-            language.ReadAttribute(xElement);
-            direction.ReadAttribute(xElement);
+            _language.ReadAttribute(xElement);
+            _direction.ReadAttribute(xElement);
 
-            onClick.ReadAttribute(xElement);
-            onDblClick.ReadAttribute(xElement);
-            onMouseDown.ReadAttribute(xElement);
-            onMouseUp.ReadAttribute(xElement);
-            onMouseOver.ReadAttribute(xElement);
-            onMouseMove.ReadAttribute(xElement);
-            onMouseOut.ReadAttribute(xElement);
-            onKeyPress.ReadAttribute(xElement);
-            onKeyDown.ReadAttribute(xElement);
-            onKeyUp.ReadAttribute(xElement);
+            _onClick.ReadAttribute(xElement);
+            _onDblClick.ReadAttribute(xElement);
+            _onMouseDown.ReadAttribute(xElement);
+            _onMouseUp.ReadAttribute(xElement);
+            _onMouseOver.ReadAttribute(xElement);
+            _onMouseMove.ReadAttribute(xElement);
+            _onMouseOut.ReadAttribute(xElement);
+            _onKeyPress.ReadAttribute(xElement);
+            _onKeyDown.ReadAttribute(xElement);
+            _onKeyUp.ReadAttribute(xElement);
         }
 
         /// <summary>
@@ -246,28 +246,28 @@ namespace XHTMLClassLibrary.BaseElements.InlineElements
 
             AddAtributes(xElement);
 
-            altAttribute.AddAttribute(xElement);
-            heightAttribute.AddAttribute(xElement);
-            widthAttribute.AddAttribute(xElement);
-            srcAttribute.AddAttribute(xElement);
+            _altAttribute.AddAttribute(xElement);
+            _heightAttribute.AddAttribute(xElement);
+            _widthAttribute.AddAttribute(xElement);
+            _srcAttribute.AddAttribute(xElement);
 
-            ismapAttribute.AddAttribute(xElement);
-            longDescAttribute.AddAttribute(xElement);
-            useMapAttribute.AddAttribute(xElement);
+            _ismapAttribute.AddAttribute(xElement);
+            _longDescAttribute.AddAttribute(xElement);
+            _useMapAttribute.AddAttribute(xElement);
 
-            language.AddAttribute(xElement);
-            direction.AddAttribute(xElement);
+            _language.AddAttribute(xElement);
+            _direction.AddAttribute(xElement);
 
-            onClick.AddAttribute(xElement);
-            onDblClick.AddAttribute(xElement);
-            onMouseDown.AddAttribute(xElement);
-            onMouseUp.AddAttribute(xElement);
-            onMouseOver.AddAttribute(xElement);
-            onMouseMove.AddAttribute(xElement);
-            onMouseOut.AddAttribute(xElement);
-            onKeyPress.AddAttribute(xElement);
-            onKeyDown.AddAttribute(xElement);
-            onKeyUp.AddAttribute(xElement);
+            _onClick.AddAttribute(xElement);
+            _onDblClick.AddAttribute(xElement);
+            _onMouseDown.AddAttribute(xElement);
+            _onMouseUp.AddAttribute(xElement);
+            _onMouseOver.AddAttribute(xElement);
+            _onMouseMove.AddAttribute(xElement);
+            _onMouseOut.AddAttribute(xElement);
+            _onKeyPress.AddAttribute(xElement);
+            _onKeyDown.AddAttribute(xElement);
+            _onKeyUp.AddAttribute(xElement);
 
             return xElement;
         }
@@ -280,7 +280,7 @@ namespace XHTMLClassLibrary.BaseElements.InlineElements
         /// </returns>
         public override bool IsValid()
         {
-            return (srcAttribute.HasValue());
+            return (_srcAttribute.HasValue());
         }
 
         /// <summary>

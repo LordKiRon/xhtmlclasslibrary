@@ -17,11 +17,11 @@ namespace XHTMLClassLibrary.BaseElements.InlineElements
     abstract public class BaseInlineItem : IInlineItem, ICommonAttributes
     {
         // Common core attributes
-        private readonly ClassAttr classattr = new ClassAttr();
-        private readonly IdAttribute idattr = new IdAttribute();
-        private readonly TitleAttribute titleattr = new TitleAttribute();
+        private readonly ClassAttr _classattr = new ClassAttr();
+        private readonly IdAttribute _idattr = new IdAttribute();
+        private readonly TitleAttribute _titleattr = new TitleAttribute();
 
-        private readonly StyleAttribute styleAttr = new StyleAttribute();
+        private readonly StyleAttribute _styleAttr = new StyleAttribute();
 
         public static XNamespace XhtmlNameSpace = @"http://www.w3.org/1999/xhtml";
 
@@ -35,7 +35,7 @@ namespace XHTMLClassLibrary.BaseElements.InlineElements
         /// </summary>
         public ClassAttr Class 
         {
-            get { return classattr; }
+            get { return _classattr; }
         }
 
 
@@ -46,7 +46,7 @@ namespace XHTMLClassLibrary.BaseElements.InlineElements
         /// </summary>
         public IdAttribute ID
         {
-            get { return idattr; }
+            get { return _idattr; }
         }
 
         /// <summary>
@@ -56,7 +56,7 @@ namespace XHTMLClassLibrary.BaseElements.InlineElements
         /// </summary>
         public TitleAttribute Title
         {
-            get { return titleattr; } 
+            get { return _titleattr; } 
         }
 
 
@@ -65,28 +65,28 @@ namespace XHTMLClassLibrary.BaseElements.InlineElements
         /// The content of this attribute is called inline CSS. The style attribute is deprecated (considered outdated), 
         /// because it fuses together content and formatting.
         /// </summary>
-        public StyleAttribute Style { get { return styleAttr; } }
+        public StyleAttribute Style { get { return _styleAttr; } }
 
 #endregion
 
         internal void AddAtributes(XElement xElement)
         {
-            classattr.AddAttribute(xElement);
-            idattr.AddAttribute(xElement);
-            titleattr.AddAttribute(xElement);
+            _classattr.AddAttribute(xElement);
+            _idattr.AddAttribute(xElement);
+            _titleattr.AddAttribute(xElement);
             
 
-            styleAttr.AddAttribute(xElement);
+            _styleAttr.AddAttribute(xElement);
 
         }
 
         internal void ReadAttributes(XElement xElement)
         {
-            classattr.ReadAttribute(xElement);
-            idattr.ReadAttribute(xElement);
-            titleattr.ReadAttribute(xElement);
+            _classattr.ReadAttribute(xElement);
+            _idattr.ReadAttribute(xElement);
+            _titleattr.ReadAttribute(xElement);
 
-            styleAttr.ReadAttribute(xElement);
+            _styleAttr.ReadAttribute(xElement);
         }
 
 
@@ -95,10 +95,10 @@ namespace XHTMLClassLibrary.BaseElements.InlineElements
         public abstract bool IsValid();
 
         /// <summary>
-        /// Adds subitem to the item , only if 
+        /// Adds sub item to the item , only if 
         /// allowed by the rules and element can accept content
         /// </summary>
-        /// <param name="item">subitem to add</param>
+        /// <param name="item">sub item to add</param>
         public abstract void Add(IXHTMLItem item);
 
         public abstract void Remove(IXHTMLItem item);
