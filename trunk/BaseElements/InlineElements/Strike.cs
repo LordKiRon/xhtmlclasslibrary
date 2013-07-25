@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace XHTMLClassLibrary.BaseElements.InlineElements
 {
+    // this element is deprecated and should NOT be used in XHTML, use <del> instead
     public class Strike : TextBasedElement
     {
         internal const string ElementName = "strike";
