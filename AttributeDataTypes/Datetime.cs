@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 
@@ -15,11 +16,11 @@ namespace XHTMLClassLibrary.AttributeDataTypes
         {
             get
             {
-                return date.ToString();
+                return date.ToString("O");
             }
             set
             {
-                DateTime date = DateTime.MinValue;
+                date = DateTime.MinValue;
                 try
                 {
                     date = DateTime.Parse(value);
