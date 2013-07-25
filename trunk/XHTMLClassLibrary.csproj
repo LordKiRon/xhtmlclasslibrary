@@ -232,7 +232,7 @@
     <Compile Include="BaseElements\BlockElements\HorizontalRule.cs" />
     <Compile Include="BaseElements\BlockElements\NoScript.cs" />
     <Compile Include="BaseElements\BlockElements\OrderedList.cs" />
-    <Compile Include="BaseElements\BlockElements\PreFormated.cs" />
+    <Compile Include="BaseElements\InlineElements\PreFormated.cs" />
     <Compile Include="BaseElements\BlockElements\Table.cs" />
     <Compile Include="BaseElements\BlockElements\UnorderedList.cs" />
     <Compile Include="BaseElements\FormMenuOptions\BaseOptionItem.cs" />
