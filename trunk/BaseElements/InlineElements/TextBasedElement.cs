@@ -13,7 +13,7 @@ namespace XHTMLClassLibrary.BaseElements.InlineElements
     public abstract class TextBasedElement : BaseInlineItem
     {
         /// <summary>
-        /// Internal containt of the element
+        /// Internal content of the element
         /// </summary>
         protected readonly List<IXHTMLItem> content = new List<IXHTMLItem>();
 
@@ -167,7 +167,7 @@ namespace XHTMLClassLibrary.BaseElements.InlineElements
 
         }
 
-        private bool IsValidSubType(IXHTMLItem item)
+        protected virtual bool IsValidSubType(IXHTMLItem item)
         {
             if (item is SimpleEPubText)
             {
