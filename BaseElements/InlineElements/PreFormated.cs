@@ -24,5 +24,41 @@ namespace XHTMLClassLibrary.BaseElements.InlineElements
         {
             return ElementName;
         }
+
+
+        protected override bool IsValidSubType(IXHTMLItem item)
+        {
+            if (!base.IsValidSubType(item))
+            {
+                return false;
+            }
+            if (item is Image || item is BigText ||
+                item is SmallText || item is Sub ||
+                item is Sup)
+            {
+                return false;
+            }
+            if (item.SubElements().FindAll((x) => x is Image).Count > 0)
+            {
+                return false;
+            }
+            if (item.SubElements().FindAll((x) => x is BigText).Count > 0)
+            {
+                return false;
+            }
+            if (item.SubElements().FindAll((x) => x is SmallText).Count > 0)
+            {
+                return false;
+            }
+            if (item.SubElements().FindAll((x) => x is Sub).Count > 0)
+            {
+                return false;
+            }
+            if (item.SubElements().FindAll((x) => x is Sup).Count > 0)
+            {
+                return false;
+            }
+            return true;
+        }
     }
 }
