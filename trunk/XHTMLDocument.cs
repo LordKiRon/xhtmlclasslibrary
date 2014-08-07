@@ -15,6 +15,7 @@ namespace XHTMLClassLibrary
         Version1_FrameSet,
         Version1_1,
         EPUBCompatible, // XHTML 1.1 Strict without
+        EPUBV3Compatible, //XHTML , no external DOCTYPEs
         // forms, server side Image maps , Intrinsic Events , Scripting
     }
 
@@ -78,6 +79,8 @@ namespace XHTMLClassLibrary
                 case XHTMRulesEnum.Version1_FrameSet:
                     return new XDocumentType("html", @"-//W3C//DTD XHTML 1.0 Frameset//EN",
                                              @"DTD/xhtml1-frameset.dtd", null);
+                case XHTMRulesEnum.EPUBV3Compatible:
+                    return new XDocumentType("html",null,null,null);
             }
             throw new NotImplementedException(string.Format("The case of {0} not implemented yet",compatibilityType));
         }
