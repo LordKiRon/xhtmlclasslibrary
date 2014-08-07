@@ -1,4 +1,7 @@
-﻿1.0.9.0
+﻿1.0.10.0
++ Added support for HTML5/XML doctype
+
+1.0.9.0
 * Fixed "Pre" element subitems check
 
 1.0.8.0
