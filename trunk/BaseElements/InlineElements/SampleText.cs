@@ -10,7 +10,7 @@ namespace XHTMLClassLibrary.BaseElements.InlineElements
     /// </summary>
     public class SampleText : TextBasedElement
     {
-        internal const string ElementName = "sample";
+        internal const string ElementName = "samp";
 
         #region Overrides of TextBasedElement
 
